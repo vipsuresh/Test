@@ -9,8 +9,15 @@
 <button type="button" onclick="myFunction()">Try it</button>
 
 <script>
+  let gate = false
 function myFunction() {
+  if(gate){
+    document.getElementById("demo").innerHTML = "A Paragraph"
+    gate = false
+  } else{
   document.getElementById("demo").innerHTML = "Paragraph changed.";
+    gate = true
+  }
 }
 </script>
 
